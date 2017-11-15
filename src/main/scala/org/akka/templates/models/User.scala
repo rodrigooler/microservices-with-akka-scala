@@ -33,13 +33,13 @@ case class UserResource(
 }
 
 case class User(
-                 _id: ObjectId,
-                 username: String,
-                 email: String,
-                 password: String,
-                 firstName: String,
-                 lastName: String,
-                 age: Int) {
+  _id: ObjectId,
+  username: String,
+  email: String,
+  password: String,
+  firstName: String,
+  lastName: String,
+  age: Int) {
   def asResource = UserResource(
     _id.toHexString,
     username,
